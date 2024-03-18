@@ -1,6 +1,5 @@
 const axios = require("axios"); 
-
-class PaymentService {
+ class PaymentService {
   constructor() {
     this.tokensMercadoPago = {
       prod: {},
@@ -120,3 +119,5 @@ class PaymentService {
         // si prueban con localhost, va a fallar
   }
 }
+
+module.exports = PaymentService;
