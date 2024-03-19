@@ -4,9 +4,8 @@ const axios = require("axios");
     this.tokensMercadoPago = {
       prod: {},
       test: {
-        access_token:
-          "APP_USR-6317427424180639-042414-47e969706991d3a442922b0702a0da44-469485398" 
-          ///process.env.ACCESS_TOKEN
+        //access_token: "APP_USR-6317427424180639-042414-47e969706991d3a442922b0702a0da44-469485398" 
+        access_token: process.env.ACCESS_TOKEN
       }
     }; 
 
@@ -43,7 +42,7 @@ const axios = require("axios");
       const preferences = { 
         items, 
         // el array de objetos, items que declaramos más arriba
-        external_reference: "referencia del negocio", 
+        external_reference: "1234", 
         // referencia para identificar la preferenciaç
         payer: { 
         // información del comprador, si estan en producción tienen que traerlos del request

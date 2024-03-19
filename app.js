@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-app.post('/payment/new', (req, res) => PaymentInstance.getMercadoPAgoLink(req, res))
+app.post('/payment/new', (req, res) => PaymentInstance.getMercadoPagoLink(req, res))
 app.post('/webhook', (req, res) => PaymentInstance.webhook(req, res))
 
 module.exports = app;
