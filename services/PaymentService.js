@@ -30,7 +30,7 @@ const axios = require("axios");
         // cantidad que estamos vendiendo, que tiene que ser un intiger
           quantity: parseInt(unit), 
         // id de la moneda, que tiene que ser en ISO 4217
-          currency_id: "ARS",
+          currency_id: "COL",
         // el precio, que por su complejidad tiene que ser tipo FLOAT
           unit_price: parseFloat(price) 
         }, {
