@@ -4,7 +4,6 @@ const axios = require("axios");
     this.tokensMercadoPago = {
       prod: {},
       test: {
-        //access_token: "APP_USR-6317427424180639-042414-47e969706991d3a442922b0702a0da44-469485398" 
         access_token: process.env.ACCESS_TOKEN
       }
     }; 
